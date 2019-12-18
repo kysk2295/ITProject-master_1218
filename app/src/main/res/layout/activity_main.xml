@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Main_frame"
+    android:background="#ffffff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMain"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Main_toolbar_title"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:layout_centerVertical="true"
+                android:src="@drawable/garbage_white"
+                android:layout_marginEnd="15dp"
+                android:id="@+id/ManageSet_trash"
+                android:visibility="gone"
+                />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Main_frame_sub"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="520dp"
+                    android:id="@+id/Main_relative"
+                    android:background="#ffffff"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="470dp"
+                        android:background="@color/colorMain"
+                        android:orientation="vertical">
+                        <!--
+                                            <ImageView
+                                                android:layout_width="25dp"
+                                                android:layout_height="25dp"
+                                                android:layout_margin="15dp"
+                                                android:src="@drawable/menu"
+                                                android:id="@+id/Main_menu"/>
+                        -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="최근 이용한 학습 세트"
+                            android:textColor="#000000"
+                            android:textSize="22sp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerview_main"
+                            android:layout_width="300dp"
+                            android:layout_height="290dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:overScrollMode="never">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/main_button_blue"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="20dp"
+                        app:civ_border_width="7dp"
+                        app:civ_border_color="#ffffff"
+                        android:id="@+id/circleImgview_main"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center|top"
+                    android:layout_below="@+id/Main_relative"
+
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="24sp"
+                        android:text="보유 중인 학습 세트 : 0개"
+                        android:id="@+id/textview_allSet_main"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"
+                        android:text="@string/text"
+                        android:id="@+id/textview_allSee_main"
+                        android:layout_marginTop="20dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Main_background"
+        android:visibility="invisible"
+        />
+
+</FrameLayout>

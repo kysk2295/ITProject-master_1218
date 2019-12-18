@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.StudyActivity"
+    android:background="#ffffff">
+
+    <androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorMain"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    android:id="@+id/Study_toolbar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/arrow_l"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            android:id="@+id/Study_back"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학습하기"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_vertical|center"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            >
+
+        </TextView>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Study_word"
+        android:layout_gravity="center_horizontal"
+        android:text="hello"
+        android:textSize="22sp"
+        android:layout_marginTop="130dp"
+        android:textColor="#000000"
+        android:layout_below="@id/Study_toolbar"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+        android:layout_width="150dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        app:rcRadius="10dp"
+        android:id="@+id/Study_progress"
+        android:layout_below="@id/Study_word"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Study_recycler"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:overScrollMode="never"
+        />
+
+</RelativeLayout>

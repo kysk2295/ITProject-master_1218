@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProfileActivity"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorMain">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/menu"
+            android:layout_margin="20dp"/>
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:src="@drawable/pencil_w"
+            android:layout_margin="20dp"
+            android:layout_gravity="right"/>
+
+    </FrameLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="320dp"
+            app:cardCornerRadius="15dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100dp"
+            app:strokeColor="@color/colorSecond"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="98dp"
+                android:layout_height="98dp"
+                android:src="@drawable/profile_user"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="20dp"
+                android:id="@+id/imageview_profile_profile"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="고윤서"
+                android:textSize="26dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp"
+                android:id="@+id/Profile_name"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kysk2295@naver.com"
+                    android:textSize="16dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorGrey"
+                    android:layout_marginTop="5dp"/>
+                </LinearLayout>
+<!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="top">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="보유 세트"
+                        android:textSize="20dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/textview_haveSet_profile"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="7"
+                        android:textSize="20dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/textview_haveSet_profile"
+                        android:gravity="center"/>
+                </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="팔로잉"
+                            android:textSize="20dp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/textview_following_profile"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="20dp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@id/textview_following_profile"
+                            android:gravity="center"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="팔로워"
+                            android:textSize="20dp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/textview_follower_profile"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="7"
+                            android:textSize="20dp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@id/textview_follower_profile"
+                            android:gravity="center"/>
+                    </RelativeLayout>
+
+                </LinearLayout>-->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="보유 중인 세트"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/textview_haveSet_profile"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="7개"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/textview_haveSet_profile"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/button_background"
+            android:layout_gravity="center"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/button_background">
+
+                <!--<ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/lock_open"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"/>-->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="비밀번호 변경"
+                    android:textColor="@color/colorMain"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+</LinearLayout>

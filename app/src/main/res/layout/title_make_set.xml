@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edittext_background"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:hint="학습 세트의 제목"
+        android:layout_below="@+id/MakeSet_toolbar"
+        android:id="@+id/MakeSet_title"
+        android:maxLines="1"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_background"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:hint="세트의 추가 설명 (선택 사항)"
+        android:layout_below="@+id/MakeSet_toolbar"
+        android:id="@+id/MakeSet_subtitle"
+        android:layout_marginBottom="25dp"
+        android:maxLines="1"
+        android:inputType="text"
+        />
+</LinearLayout>

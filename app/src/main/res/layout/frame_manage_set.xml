@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="  내 학습세트 검색"
+            android:id="@+id/ManageSet_edit"
+            android:paddingBottom="15dp"/>
+
+        <!--<ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:src="@drawable/search"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/ManageSet_search">
+
+        </ImageView>-->
+
+    </LinearLayout>
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="right|center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <CheckBox
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="3dp"
+            android:id="@+id/ManageSet_checkAll"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/trash_"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/ManageSet_trash"/>
+
+    </LinearLayout>
+-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/ManageSet_recycler"
+        android:overScrollMode="never"
+        />
+
+    <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/colorMain"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/plus3"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="25dp"
+        android:id="@+id/ManageSet_addbtn"
+        />-->
+
+</LinearLayout>
